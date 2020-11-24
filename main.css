@@ -48,6 +48,18 @@ body {
 .menu a{text-decoration:none; color:#F26662;}
 .menu a:hover{text-decoration:none; color:#F26662;}
 
+.subnav {
+	background-color: white;
+}
+
+.subnav li {
+	display: block;
+}
+
+.subnav ul li a {
+	color: red;
+}
+
 .hide {
   display: none;
 }
@@ -201,4 +213,176 @@ footer p {
 	font-weight: 200;
 	color: #8BB6BF;
 	font-size: 1.2rem;
+}
+
+/*-------------------------------- OUR STORY PAGE ---------------------------- */
+
+#story header {
+	background-color: #F6F0EC;
+	margin-bottom: 20%;
+}
+
+#story #logo {
+	padding-bottom: 10%;
+}
+
+.storyheader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.storyheader h3 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.ocean {
+	width: 20vw;
+	padding: 5%;
+}
+
+.story {
+	padding: 0 4%;
+}
+
+.story h2 {
+	text-align: left;
+	color: #3A848D;
+	font-weight: 400;
+	font-size: 2rem;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+.story p {
+	font-size: .8rem;
+	font-weight: 300;
+	padding-bottom: 5%;
+}
+
+.storypic img {
+	width: 24vw;
+}
+
+.storypic {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10% 0;
+}
+
+.values {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10%;
+}
+
+.values ul {
+	list-style-type: none;
+	border-top: 2px solid #F26662;
+}
+
+.values ul li {
+	text-align: center;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.values h3 {
+	text-align: left;
+	color: #3A848D;
+	font-weight: 400;
+	font-size: 2rem;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+.values p {
+	font-size: .8rem;
+	font-weight: 300;
+	padding-bottom: 5%;
+}
+
+/*-------------------------------- OUR work PAGE ---------------------------- */
+
+#work header {
+	background-color: #F6F0EC;
+	padding-bottom: 5%;
+}
+
+.work {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.work img {
+	width: 60vw;
+	padding-top: 20%;
+}
+
+.work h2 {
+	color: #3A848D;
+	font-weight: 400;
+	font-size: 2rem;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+.work p {
+	font-size: .8rem;
+	font-weight: 300;
+	padding: 0 7%;
+	text-align: center;
+}
+
+.work ul li {
+	font-size: .8rem;
+	color: #F26662;
+}
+
+.work ul {
+	padding-left: 30vw;
+	list-style-type: none;
+	padding-top: 15%;
+	padding-bottom: 10%;
+}
+
+.strats {
+	width: 95vw;
+	padding-top: 10%;
+	padding-left: 2.5vw;
+	padding-bottom: 20%;
+}
+
+/*--------------------- pop-up banner --------------------- */
+
+.pop-up {
+  padding: 20px;
+  background-color: #F26662;
+  color: white;
+  opacity: 1;
+  margin-bottom: 15px;
+	font-size: 1rem;
+
+}
+
+
+.close {
+  margin-left: 15px;
+  color: white;
+  float: right;
+  font-size: 3rem;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: black;
 }
