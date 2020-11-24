@@ -69,3 +69,27 @@ for( i = 0; i < nav2.length; i ++){
   nav2[i].addEventListener("mouseenter", showNav2)
   nav2[i].addEventListener("mouseleave", showNav2)
 };
+
+
+//API
+
+var weatherSpan = document.querySelectorAll("#weather p span");
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var apiResult = JSON.parse(this.responseText);
+
+        console.log(apiResult);
+
+        var name = document.createTextNode(apiResult.name);
+        weatherSpan[0].appendChild(name);
+
+        var weather = document.createTextNode(apiResult.weather[0].main);
+        weatherSpan[1].appendChild(weather);
+
+
+    }
+};
+xmlhttp.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=96708,us&appid=6efff70fe1477748e31c17d1c504635f', true);
+xmlhttp.send();

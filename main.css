@@ -168,11 +168,11 @@ button a:hover {
 }
 
 .coralhome p {
-	font-size: .8rem;
+	font-size: 1.5rem;
 	font-weight: 300;
 	color: #F26662;
 	padding: 2% 10%;
-	text-align: left;
+	text-align: center;
 
 }
 
@@ -556,7 +556,7 @@ footer p {
 	}
 
 	.coralhome p {
-		font-size: 1rem;
+		font-size: 2rem;
 		text-align: center;
 	}
 
@@ -727,7 +727,7 @@ footer p {
 	}
 
 	.coralhome p {
-		font-size: 1rem;
+		font-size: 2rem;
 		padding: 2% 15%;
 		text-align: center;
 
