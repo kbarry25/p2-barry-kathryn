@@ -105,6 +105,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+	justify-content: center;
   background-color: #F6F0EC;
   width: 100vw;
   margin-top: 10%;
@@ -116,6 +117,22 @@ button {
   color: #3A848D;
   border: 4px solid #3A848D;
   margin-bottom: 10%;
+}
+
+button a {
+	text-decoration: none;
+	color: #3A848D;
+}
+
+button a:hover {
+	color: #F26662;
+}
+
+.button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /*-------------------------------- END HEADER -------------------------------*/
@@ -179,6 +196,13 @@ button {
 	padding-top: 10%;
 }
 
+.invcirc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 footer {
 	display: flex;
 	flex-direction: column;
@@ -202,10 +226,11 @@ footer ul {
 	list-style-type: none;
 	text-align: center;
 	padding-top: 10%;
+	padding-bottom: 25%;
 }
 
 footer img {
-	width: 40vw;
+	width: 30vw;
 	padding: 15% 0 15% 0;
 }
 
@@ -332,6 +357,7 @@ footer p {
 	font-size: 2rem;
 	padding-top: 10%;
 	padding-bottom: 5%;
+	text-transform: uppercase;
 }
 
 .work p {
@@ -353,6 +379,14 @@ footer p {
 	padding-bottom: 10%;
 }
 
+#work h3 {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 400;
+	padding-top: 15%;
+	text-transform: uppercase;
+}
+
 .strats {
 	width: 95vw;
 	padding-top: 10%;
@@ -369,6 +403,7 @@ footer p {
   opacity: 1;
   margin-bottom: 15px;
 	font-size: 1rem;
+	margin-top: 5%;
 
 }
 
@@ -385,4 +420,382 @@ footer p {
 
 .close:hover {
   color: black;
+}
+
+/* ------------------------- 525px media query ---------------------*/
+
+@media (min-width: 525px) {
+
+
+	#logo {
+		width: 20vw;
+	}
+
+	.headerimg {
+	  width: 40vw;
+	  margin-top: 10%;
+	}
+
+	footer img {
+		width: 20vw;
+	}
+
+	#story p {
+		font-size: 1rem;
+	}
+
+	#work p {
+		font-size: 1rem;
+	}
+
+	.work img {
+		width: 40vw;
+		padding-top: 10%;
+	}
+
+	.work ul li {
+		font-size: 1.2rem;
+	}
+
+	.involved img {
+		width: 30vw;
+		padding-top: 10%;
+	}
+
+	.storyheader h3 {
+		font-size: 1.8rem;
+	}
+
+	.story h2 {
+		padding-top: 0%;
+	}
+}
+
+/* ------------------------- 700px media query ---------------------*/
+
+@media (min-width: 700px) {
+	.menu {
+		display: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: block;
+	}
+
+	.desktop-menu ul {
+		list-style-type: none;
+		width: 70vw;
+		text-align: center;
+		padding-top: 3vw;
+	}
+
+	.desktop-menu ul li {
+	 	display: inline;
+		padding: 2%;
+	}
+
+	.desktop-menu ul li a {
+	 	text-decoration: none;
+		color: #3A848D;
+	}
+
+	.desktop-menu ul li a:hover {
+		color: #F26662;
+	}
+
+	.desktopnav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 5%;
+	}
+
+	.subnav2 li a {
+		display: block;
+		background-color: #F6F0EC;
+		width: 20vw;
+		margin-left: 39vw;
+	}
+
+
+
+	#logo {
+		width: 10vw;
+	}
+
+	.block {
+		display: flex;
+		flex-direction: row;
+		margin-top: 5%;
+	}
+	.headerimg {
+		width: 33vw;
+		padding-right: 15%;
+		padding-bottom: 15%;
+	}
+
+	.button {
+		align-items: flex-start;
+	}
+
+	.fate {
+		text-align: center;
+	}
+
+	.invcirc {
+		flex-direction: row;
+	}
+
+	.involved img {
+		width: 25vw;
+		padding: 2vw;
+	}
+
+	.coralhome p {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	footer {
+		flex-direction: row;
+	}
+
+	.fate h3 {
+		padding-top 10%;
+	}
+
+	.storyheader h3 {
+		font-size: 2.2rem;
+		padding-left: 5%;
+	}
+
+	#story header {
+		margin-bottom: 10%;
+	}
+
+	.storypic {
+		flex-direction: row;
+	}
+
+	.storypic img {
+		width: 20vw;
+		padding: 2vw;
+	}
+
+	.values {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding-top: 0;
+	}
+
+	.values ul {
+		border-right: 2px solid #F26662;
+		border-top: none;
+		margin-right: 5vw;
+		padding-right: 3vw;
+	}
+
+	.values ul li {
+		text-align: right;
+		padding-bottom: 5%;
+		font-size: 1.2rem;
+	}
+
+	.values h3 {
+		text-align: left;
+		color: #3A848D;
+		font-weight: 400;
+		font-size: 2rem;
+		padding-top: 10%;
+		padding-bottom: 5%;
+	}
+
+	.values p {
+		font-size: .8rem;
+		font-weight: 300;
+		padding-bottom: 5%;
+	}
+
+	.work {
+		flex-direction: row;
+		margin-top: 5%;
+	}
+
+	.work2 {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.work img {
+		width: 40vw;
+		padding-top: 0;
+		padding: 0 5%;
+	}
+
+	.work h2 {
+		padding-top: 10%;
+		padding-bottom: 5%;
+	}
+
+	.work p {
+		text-align: left;
+		padding-left: 0;
+	}
+
+	.work ul li {
+		font-size: .8rem;
+		padding-top: 3%;
+	}
+
+	.work ul {
+		padding-left: 0vw;
+		padding-top: 3%;
+	}
+
+	.strats {
+		width: 80vw;
+		padding-left: 10vw;
+	}
+
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+}
+
+/* ------------------------- 850px media query ---------------------*/
+
+@media (min-width: 850px) {
+
+	footer ul li {
+		display: inline;
+		padding-right: 2%;
+	}
+
+	footer ul li a {
+		font-size: 1rem;
+	}
+
+	footer ul {
+		width: 70vw;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		text-align: right;
+	}
+
+	footer img {
+		width: 10vw;
+		padding: 6%;
+	}
+
+	footer {
+		padding-bottom: 0;
+	}
+
+	.foot {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.fate {
+		width: 60vw;
+	}
+	.fate h3 {
+		font-size: 1.7rem;
+		padding-top: 25%;
+	}
+
+	.fate p {
+		font-size: 1.3rem;
+		padding-top: 7%;
+		text-align: center;
+	}
+
+	.coralhome img {
+		width: 20vw;
+		padding-top: 10%;
+	}
+
+	.coralhome p {
+		font-size: 1rem;
+		padding: 2% 15%;
+		text-align: center;
+
+	}
+
+	.involved img {
+		width: 20vw;
+		padding-top: 5%;
+	}
+
+	.work img {
+		width: 30vw;
+		padding-top: 0;
+		padding: 0 5%;
+	}
+
+	.work2 {
+		width: 35vw;
+		margin-left: 5vw;
+	}
+
+	.headerimg {
+		width: 25vw;
+		padding-right: 5vw;
+	}
+
+	.involved img {
+		width: 16vw;
+		padding: 5vw;
+	}
+
+	.ocean {
+		width: 15vw;
+		margin-left: 10vw;
+	}
+
+	.storyheader {
+		padding: 2% 0;
+	}
+
+	.storyheader h3 {
+		font-size: 3rem;
+		padding-right: 10vw;
+	}
+
+	.story {
+		width: 65vw;
+		margin-left: 13vw;
+	}
+
+	.storypic img {
+		width: 15vw;
+	}
+
+	.values {
+		width: 65vw;
+		margin-left: 10vw;
+	}
+
+	.values h3 {
+		padding-top: 0;
+	}
+
+
+
+
+
+
+
+
 }

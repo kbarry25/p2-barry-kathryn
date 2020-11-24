@@ -13,13 +13,16 @@ for( i = 0; i < hamburger.length; i ++){
   hamburger[i].addEventListener("click", showMenu)
 }
 
+
+
+
 // pop-up banner
 
 var popup = document.getElementsByClassName('pop-up');
 var fate = document.getElementsByClassName('fate');
 
 function showAd() {
-  popup[0].classList.toggle('show');
+  popup[0].classList.add('show');
 };
 
 for( i = 0; i < popup.length; i ++){
@@ -42,7 +45,7 @@ for (i = 0; i < close.length; i++) {
 var nav = document.getElementsByClassName('nav');
 
 var subNav = document.getElementsByClassName('subnav');
-//console.log(menuLabels);
+
 
 function showNav() {
   subNav[0].classList.toggle('show');
@@ -51,4 +54,18 @@ function showNav() {
 for( i = 0; i < nav.length; i ++){
   nav[i].addEventListener("click", showNav)
   nav[i].addEventListener("click", showNav)
+};
+
+var nav2 = document.getElementsByClassName('nav2');
+
+var subNav2 = document.getElementsByClassName('subnav2');
+
+
+function showNav2() {
+  subNav2[0].classList.toggle('show');
+};
+
+for( i = 0; i < nav2.length; i ++){
+  nav2[i].addEventListener("mouseenter", showNav2)
+  nav2[i].addEventListener("mouseleave", showNav2)
 };
